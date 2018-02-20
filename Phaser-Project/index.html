@@ -32,6 +32,14 @@ function preload() {
     game.load.spritesheet('santa', 'assets/santasprites/santa.png', 94.75, 72)
 }
 
+var player;
+var platforms;
+var cursors;
+
+var presents;
+var score = 0;
+var scoreText;
+
 function create() {
     game.physics.startSystem(Phaser.Physics.ARCADE);
 
@@ -78,9 +86,6 @@ function create() {
 
     player.animations.add('left', [0, 1, 2, 3], 8, true);
     player.animations.add('right', [5, 6, 7, 8], 8, true);
-    
-    //Keyboard Manager
-    cursors = game.input.keyboard.createCursorKeys();
 
     //Setting up object
     presents = game.add.group();
@@ -96,7 +101,10 @@ function create() {
         
     }
 
-    
+    scoreText = game.add.text(16, 16, 'Score: 0', {fontSize: '15px', fill: '#000'});
+
+    //Keyboard Manager
+    cursors = game.input.keyboard.createCursorKeys();
 }
 
 function update() {
@@ -135,6 +143,14 @@ function update() {
     function collectPresent (player, present) {
         //Removes the present after player makes contact
         present.kill();
+
+        //  Add and update the score
+        score += 10;
+        scoreText.text = 'Score:' + score;
+
+        if (score == 120) {
+            console.log('Nice Going!')
+        }
     }
 }
 
