@@ -28,7 +28,7 @@ function preload() {
     game.load.image('ground4', 'assets/png/tiles/14.png');
     game.load.image('ground5', 'assets/png/tiles/15.png');
     game.load.image('ground6', 'assets/png/tiles/16.png');
-    game.load.image('star', 'assets/star.png');
+    game.load.image('present', 'assets/png/object/present.png');
     game.load.spritesheet('santa', 'assets/santasprites/santa.png', 94.75, 72)
 }
 
@@ -81,6 +81,23 @@ function create() {
     
     //Keyboard Manager
     cursors = game.input.keyboard.createCursorKeys();
+
+    //Setting up object
+    presents = game.add.group();
+    presents.enableBody = true;
+    presents.scale.setTo(1, 1);
+    //Creating the presents
+    for (var i = 0; i < 12; i++) {
+        //Creating a present inside the 'presents' group
+        let present = presents.create(i * 122, 0, 'present');
+
+        //Adding gravity
+        present.body.gravity.y = 800;
+        present.body.collideWorldBounds = true;
+        
+    }
+
+    
 }
 
 function update() {
@@ -112,6 +129,8 @@ function update() {
     if (cursors.up.isDown && player.body.touching.down && hitPlatform) {
         player.body.velocity.y = -750;
     }
+
+    game.physics.arcade.collide(presents, platforms);
 }
 
 </script>
