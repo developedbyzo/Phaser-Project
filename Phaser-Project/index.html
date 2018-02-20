@@ -93,7 +93,6 @@ function create() {
 
         //Adding gravity
         present.body.gravity.y = 800;
-        present.body.collideWorldBounds = true;
         
     }
 
@@ -131,6 +130,12 @@ function update() {
     }
 
     game.physics.arcade.collide(presents, platforms);
+    game.physics.arcade.overlap(player, presents, collectPresent, null, this);
+
+    function collectPresent (player, present) {
+        //Removes the present after player makes contact
+        present.kill();
+    }
 }
 
 </script>
