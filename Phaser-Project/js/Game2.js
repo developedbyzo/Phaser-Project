@@ -35,17 +35,17 @@ PresentSaver.Game2.prototype = {
     platforms.create(1365, this.game.world.height - 100, 'ground3').body.immovable = true
 
   // Creating the ledges
-    platforms.create(50, 400, 'ground4').body.immovable = true
-    platforms.create(75, 400, 'ground5').body.immovable = true
-    platforms.create(85, 400, 'ground6').body.immovable = true
+    platforms.create(800, 400, 'ground4').body.immovable = true
+    platforms.create(925, 400, 'ground5').body.immovable = true
+    platforms.create(1050, 400, 'ground6').body.immovable = true
 
     platforms.create(1000, 100, 'ground4').body.immovable = true
     platforms.create(1125, 100, 'ground5').body.immovable = true
     platforms.create(1250, 100, 'ground6').body.immovable = true
 
-    platforms.create(20, 200, 'ground4').body.immovable = true
-    platforms.create(35, 200, 'ground5').body.immovable = true
-    platforms.create(50, 200, 'ground6').body.immovable = true
+    platforms.create(200, 200, 'ground4').body.immovable = true
+    platforms.create(325, 200, 'ground5').body.immovable = true
+    platforms.create(450, 200, 'ground6').body.immovable = true
 
   // Creating the player
     player = this.game.add.sprite(40, this.game.world.height - 250, 'santa')
