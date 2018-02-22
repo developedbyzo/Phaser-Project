@@ -6,6 +6,7 @@ PresentSaver.MainMenu = function () {}
 PresentSaver.MainMenu.prototype = {
   create: function () {
     // start game text
+    this.background = this.game.add.sprite(0, 0, 'menu')
     let text = 'Click To Begin'
     let style = {font: '30px Arial', fill: '#fff', align: 'center'}
     let t = this.game.add.text(this.game.width / 2, this.game.height / 2, text, style)

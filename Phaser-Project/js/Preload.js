@@ -12,6 +12,7 @@ PresentSaver.Preload.prototype = {
     this.load.setPreloadSprite(this.preloadBar)
 
     // load game assets
+    this.load.image('menu', 'assets/titleScreen.png')
     this.load.image('sky', 'assets/png/bg/sky.png')
     this.load.image('rock', 'assets/background_layers(itch.io)/rocks_1.png')
     this.load.image('rock2', 'assets/background_layers(itch.io)/rocks_2.png')

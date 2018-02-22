@@ -39,6 +39,10 @@ PresentSaver.Game2.prototype = {
     platforms.create(75, 400, 'ground5').body.immovable = true
     platforms.create(85, 400, 'ground6').body.immovable = true
 
+    platforms.create(1000, 100, 'ground4').body.immovable = true
+    platforms.create(1125, 100, 'ground5').body.immovable = true
+    platforms.create(1250, 100, 'ground6').body.immovable = true
+
     platforms.create(20, 200, 'ground4').body.immovable = true
     platforms.create(35, 200, 'ground5').body.immovable = true
     platforms.create(50, 200, 'ground6').body.immovable = true
