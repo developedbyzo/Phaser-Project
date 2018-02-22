@@ -6,10 +6,12 @@ PresentSaver.Game = function () {}
 var player
 var platforms
 var cursors
+var jumping
 
 var presents
 var score = 0
 var scoreText
+var collecting
 
 PresentSaver.Game.prototype = {
   create: function () {
@@ -83,11 +85,11 @@ PresentSaver.Game.prototype = {
 
     if (cursors.left.isDown) {
         // Move to the left
-      player.body.velocity.x = -250
+      player.body.velocity.x = -450
       player.animations.play('left')
     } else if (cursors.right.isDown) {
         // Move to the right
-      player.body.velocity.x = 250
+      player.body.velocity.x = 450
       player.animations.play('right')
     } else {
         // Stand still
@@ -98,15 +100,22 @@ PresentSaver.Game.prototype = {
     // Allow the player to jump if touching the ground
     if (cursors.up.isDown && player.body.touching.down && hitPlatform) {
       player.body.velocity.y = -750
+
+      jumping = this.game.add.audio('jumpSound')
+      jumping.play()
     }
 
     this.game.physics.arcade.collide(presents, platforms)
     this.game.physics.arcade.overlap(player, presents, collectPresent, null, this)
 
-    // game.physics.arcade.overlap(player, door);
     function collectPresent (player, present) {
       // Removes the present after player makes contact
       present.kill()
+
+      // Sound effect for item pick-up
+      collecting = this.game.add.audio('item')
+
+      collecting.play()
 
       //  Add and update the score
       score += 10

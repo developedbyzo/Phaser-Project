@@ -13,7 +13,10 @@ PresentSaver.Preload.prototype = {
 
     // load game assets
     this.load.audio('bgm', 'assets/music/8 Bit Universe - Last Christmas (8 Bit Tribute to Wham!).mp3')
+    this.load.audio('jumpSound', 'assets/music/Mario-jump-sound.mp3')
+    this.load.audio('item', 'assets/music/332629__treasuresounds__item-pickup.ogg')
     this.load.image('menu', 'assets/titleScreen.png')
+    this.load.image('thanks', 'assets/endScreen.png')
     this.load.image('sky', 'assets/png/bg/sky.png')
     this.load.image('rock', 'assets/background_layers(itch.io)/rocks_1.png')
     this.load.image('rock2', 'assets/background_layers(itch.io)/rocks_2.png')
@@ -24,7 +27,7 @@ PresentSaver.Preload.prototype = {
     this.load.image('ground5', 'assets/png/tiles/15.png')
     this.load.image('ground6', 'assets/png/tiles/16.png')
     this.load.image('present', 'assets/png/object/present.png')
-    this.load.spritesheet('santa', 'assets/santasprites/santa.png', 94.75, 72)
+    this.load.spritesheet('santa', 'assets/santasprites/santa.png', 94.828, 72)
   },
   create: function () {
     this.state.start('MainMenu')

@@ -5,6 +5,7 @@ PresentSaver.Boot = function () {}
 // Setting game configuration
 PresentSaver.Boot.prototype = {
   preload: function () {
+    this.load.image('logo', 'assets/logo.png')
     this.load.image('preloadbar', 'assets/preloader-bar.png')
   },
   create: function () {
