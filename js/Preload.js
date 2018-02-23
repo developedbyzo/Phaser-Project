@@ -17,7 +17,7 @@ PresentSaver.Preload.prototype = {
     this.load.audio('item', 'assets/music/332629__treasuresounds__item-pickup.ogg')
     this.load.image('menu', 'assets/titleScreen.png')
     this.load.image('thanks', 'assets/endScreen.png')
-    this.load.image('present', 'assets/png/Object/Present.png')
+    this.load.image('present', 'assets/png/Object/Crate.png')
     this.load.image('sky', 'assets/png/BG/sky.png')
     this.load.image('rock', 'assets/background_layers(itch.io)/rocks_1.png')
     this.load.image('rock2', 'assets/background_layers(itch.io)/rocks_2.png')
