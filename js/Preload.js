@@ -12,11 +12,11 @@ PresentSaver.Preload.prototype = {
     this.load.setPreloadSprite(this.preloadBar)
 
     // load game assets
-    this.load.audio('bgm', 'assets/music/8 Bit Universe - Last Christmas (8 Bit Tribute to Wham!).mp3')
-    this.load.audio('jumpSound', 'assets/music/Mario-jump-sound.mp3')
-    this.load.audio('item', 'assets/music/332629__treasuresounds__item-pickup.ogg')
+    // this.load.audio('bgm', 'assets/music/8 Bit Universe - Last Christmas (8 Bit Tribute to Wham!).mp3')
+    // this.load.audio('jumpSound', 'assets/music/Mario-jump-sound.mp3')
+    // this.load.audio('item', 'assets/music/332629__treasuresounds__item-pickup.ogg')
     this.load.image('menu', 'assets/titleScreen.png')
-    this.load.image('thanks', 'assets/endScreen.png')
+    // this.load.image('thanks', 'assets/endScreen.png')
     this.load.image('sky', 'assets/png/bg/sky.png')
     this.load.image('rock', 'assets/background_layers(itch.io)/rocks_1.png')
     this.load.image('rock2', 'assets/background_layers(itch.io)/rocks_2.png')
