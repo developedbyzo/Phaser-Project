@@ -21,8 +21,6 @@ PresentSaver.Preload.prototype = {
     this.load.image('menu', 'assets/titleScreen.png')
     this.load.image('thanks', 'assets/endScreen.png')
     this.load.image('sky', 'assets/png/BG/sky.png')
-    this.load.image('rock', 'assets/background_layers(itch.io)/rocks_1.png')
-    this.load.image('rock2', 'assets/background_layers(itch.io)/rocks_2.png')
     this.load.image('ground', 'assets/png/Tiles/1.png')
     this.load.image('ground2', 'assets/png/Tiles/2.png')
     this.load.image('ground3', 'assets/png/Tiles/3.png')
