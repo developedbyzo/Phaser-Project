@@ -26,7 +26,7 @@ PresentSaver.Preload.prototype = {
     this.load.image('ground4', 'assets/png/Tiles/14.png')
     this.load.image('ground5', 'assets/png/Tiles/15.png')
     this.load.image('ground6', 'assets/png/Tiles/16.png')
-    this.load.image('present', 'assets/png/Object/present.png')
+    this.load.image('present', 'assets/Object/Present.png')
     this.load.spritesheet('santa', 'assets/santasprites/santa.png', 94.828, 72)
   },
   create: function () {
