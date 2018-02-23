@@ -1,5 +1,4 @@
  # Present Saver: Santa
-## Description
 Oh no, it's Christmas Eve and Santa lost some of the children's gifts! Santa needs your help in recovering them all!
 Present Saver: Santa is a simple item collecting game. Players are asked by Santa for their help in collecting all of the presents that fell from his sleigh. This version of the game is only a demo.
 ![title](http://i64.tinypic.com/hs9u84.png)
