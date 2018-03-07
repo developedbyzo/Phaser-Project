@@ -99,7 +99,7 @@ PresentSaver.Game.prototype = {
 
     // Allow the player to jump if touching the ground
     if (cursors.up.isDown && player.body.touching.down && hitPlatform) {
-      player.body.velocity.y = -650
+      player.body.velocity.y = -950
 
       jumping = this.game.add.audio('jumpSound')
       jumping.play()
