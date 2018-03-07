@@ -37,9 +37,9 @@ PresentSaver.Game.prototype = {
     platforms.create(1365, this.game.world.height - 100, 'ground3').body.immovable = true
 
   // Creating the ledges
-    platforms.create(800, 600, 'ground4').body.immovable = true
-    platforms.create(925, 600, 'ground5').body.immovable = true
-    platforms.create(1050, 600, 'ground6').body.immovable = true
+    platforms.create(800, 400, 'ground4').body.immovable = true
+    platforms.create(925, 400, 'ground5').body.immovable = true
+    platforms.create(1050, 400, 'ground6').body.immovable = true
 
     platforms.create(200, 200, 'ground4').body.immovable = true
     platforms.create(325, 200, 'ground5').body.immovable = true
@@ -99,7 +99,7 @@ PresentSaver.Game.prototype = {
 
     // Allow the player to jump if touching the ground
     if (cursors.up.isDown && player.body.touching.down && hitPlatform) {
-      player.body.velocity.y = -750
+      player.body.velocity.y = -650
 
       jumping = this.game.add.audio('jumpSound')
       jumping.play()
