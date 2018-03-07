@@ -37,9 +37,9 @@ PresentSaver.Game.prototype = {
     platforms.create(1365, this.game.world.height - 100, 'ground3').body.immovable = true
 
   // Creating the ledges
-    platforms.create(800, 400, 'ground4').body.immovable = true
-    platforms.create(925, 400, 'ground5').body.immovable = true
-    platforms.create(1050, 400, 'ground6').body.immovable = true
+    platforms.create(600, 400, 'ground4').body.immovable = true
+    platforms.create(725, 400, 'ground5').body.immovable = true
+    platforms.create(850, 400, 'ground6').body.immovable = true
 
     platforms.create(200, 200, 'ground4').body.immovable = true
     platforms.create(325, 200, 'ground5').body.immovable = true
